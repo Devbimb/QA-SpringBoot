@@ -1,0 +1,18 @@
+package com.example.computer;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+import com.example.interfaces.Computer;
+import com.example.interfaces.HDD;
+//@Component("MyMerc")
+public class HP implements Computer{
+	@Autowired
+	@Qualifier("V6Engine")
+	HDD eng; //new Engine();
+	
+	public String spec() {
+		return "This is SUV with engine type as " + eng.type();
+	}
+}

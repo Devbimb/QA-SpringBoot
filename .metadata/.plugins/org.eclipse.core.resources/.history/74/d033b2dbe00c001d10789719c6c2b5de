@@ -1,0 +1,5 @@
+package com.example.Springdb.model;
+
+public class Employee {
+
+}

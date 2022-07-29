@@ -1,0 +1,10 @@
+package com.example.types;
+
+import com.example.interfaces.Engine;
+
+public class V6 implements Engine {
+	public String type() {
+		return "V6 Engine designed by Sean";
+	}
+
+}

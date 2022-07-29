@@ -1,0 +1,23 @@
+package com.example;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.interfaces.Computer;
+
+@SpringBootApplication
+public class DependencyInjecComputer {
+
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext context=
+                new AnnotationConfigApplicationContext(AppConfig.class);
+        Computer myCar=context.getBean("MyBMW",Computer.class);
+        System.out.println(myCar.spec());
+        
+        Computer yourCar=context.getBean("MyMerc",Computer.class);
+        System.out.println(yourCar.spec());
+	}
+
+}

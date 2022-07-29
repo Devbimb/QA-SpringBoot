@@ -1,0 +1,22 @@
+package com.example.rest.dto;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class BandDTO {
+    private Long id;
+
+    private String name;
+
+    private Long phone;
+    
+    private String musicians;
+
+//    public BandDTO() {
+//        super();
+//    }
+
+    // getters and setters
+}

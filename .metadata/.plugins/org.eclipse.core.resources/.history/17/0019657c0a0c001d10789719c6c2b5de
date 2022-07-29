@@ -1,0 +1,15 @@
+package com.example;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+
+@EntityScan
+
+public class Computer {
+	@Min(4)
+	private String brand;
+
+
+	}
+
+}

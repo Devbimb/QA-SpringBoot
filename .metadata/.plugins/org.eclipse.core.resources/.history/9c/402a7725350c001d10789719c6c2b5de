@@ -1,0 +1,12 @@
+package com.example.types;
+
+import org.springframework.stereotype.Component;
+
+import com.example.interfaces.HDD;
+@Component("V8Engine")
+public class V8 implements HDD{
+	public String type() {
+		return "V8 Engine designed by Upasana";
+	}
+
+}
